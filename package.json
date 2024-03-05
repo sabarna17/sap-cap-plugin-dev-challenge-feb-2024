@@ -1,0 +1,40 @@
+{
+  "name": "dev-challenge-feb-2024-sabarna17",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.12.5",
+    "@cap-js/audit-logging": "^0.6.0",
+    "@cap-js/change-tracking": "^1.0.5",
+    "@cap-js/graphql": "^0.10.0",
+    "@cap-js/notifications": "^0.1.0",
+    "@cap-js/telemetry": "^0.0.4",
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "basic",
+        "users": {
+          "sabarna17": {
+            "password": "1993",
+            "roles": [
+              "admin"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
